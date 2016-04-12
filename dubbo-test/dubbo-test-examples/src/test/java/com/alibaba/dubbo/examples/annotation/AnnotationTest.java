@@ -40,6 +40,7 @@ public class AnnotationTest {
                 AnnotationAction annotationAction = (AnnotationAction) consumerContext.getBean("annotationAction");
                 String hello = annotationAction.doSayHello("world");
                 assertEquals("annotation: hello, world", hello);
+                System.out.println("sakyone test??");
             } finally {
                 consumerContext.stop();
                 consumerContext.close();
